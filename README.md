@@ -1,6 +1,6 @@
 # cooper-aerial-pm-vue
 
->  project management app for cooper aerial with server side rails and client side vue
+> cooper aerial project management app using rails on server side and vue on client side
 
 ## Build Setup
 
