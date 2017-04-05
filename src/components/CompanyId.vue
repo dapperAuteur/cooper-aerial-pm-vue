@@ -1,7 +1,7 @@
 <template>
   <div class="companyId">
     <h1>{{ msg }}</h1>
-    <h2>Is it working</h2>
+    <h2>is this companyId</h2>
 
   </div>
 </template>
@@ -11,7 +11,7 @@ export default {
   name: 'companyId',
   data () {
     return {
-      msg: 'CompanyId Component'
+      msg: 'CompanyId Page'
     }
   }
 }
@@ -22,4 +22,5 @@ export default {
 h1, h2 {
   font-weight: normal;
 }
+
 </style>

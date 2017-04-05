@@ -1,7 +1,8 @@
 <template>
   <div class="companies">
     <h1>{{ msg }}</h1>
-    <button><router-link to="/companies/companyId">CompanyId</router-link></button>
+    <h2>is this companies</h2>
+    <router-view></router-view>
 
   </div>
 </template>

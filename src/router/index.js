@@ -18,18 +18,16 @@ export default new Router({
       path: '/companies',
       name: 'Companies',
       component: Companies,
-        children: [
-          {
-            path: '/companyId',
-            name: 'CompanyId',
-            component: CompanyId
-          },
-          {
-            path: '/restAPI',
-            name: 'RestAPI',
-            component: RestAPI
-          }
-        ]
-      }
+    },
+    {
+      path: 'companies/companyId',
+      name: 'CompanyId',
+      component: CompanyId
+    },
+    {
+      path: '/restAPI',
+      name: 'RestAPI',
+      component: RestAPI
+    }
     ]
   })

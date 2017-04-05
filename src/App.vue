@@ -4,6 +4,7 @@
     </br>
     <button><router-link to="/">Home</router-link></button>
     <button><router-link to="/companies">Companies</router-link></button>
+    <button><router-link to="/companies/companyId">CompanyId</router-link></button>
     <button><router-link to="/companies/restAPI">RestAPI</router-link></button>
     <router-view></router-view>
   </div>
