@@ -17,17 +17,17 @@ export default new Router({
     {
       path: '/companies',
       name: 'Companies',
-      component: Companies,
+      component: Companies
     },
     {
-      path: 'companies/companyId',
+      path: '/companies/companyId',
       name: 'CompanyId',
       component: CompanyId
     },
     {
-      path: '/restAPI',
+      path: '/companies/restAPI',
       name: 'RestAPI',
       component: RestAPI
     }
-    ]
-  })
+  ]
+})

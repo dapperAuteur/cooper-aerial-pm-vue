@@ -1,8 +1,7 @@
 <template>
   <div class="companyId">
-    <h1>{{ msg }}</h1>
+    <h1>{{ msgs }}</h1>
     <h2>is this companyId</h2>
-
   </div>
 </template>
 
@@ -11,7 +10,7 @@ export default {
   name: 'companyId',
   data () {
     return {
-      msg: 'CompanyId Page'
+      msgs: 'CompanyId Page'
     }
   }
 }
