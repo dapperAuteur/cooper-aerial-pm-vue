@@ -1,17 +1,17 @@
 <template>
-  <div class="companies">
+  <div class="companyId">
     <h1>{{ msg }}</h1>
-    <button><router-link to="/companies/companyId">CompanyId</router-link></button>
+    <h2>Is it working</h2>
 
   </div>
 </template>
 
 <script>
 export default {
-  name: 'companies',
+  name: 'companyId',
   data () {
     return {
-      msg: 'Welcome to the Cooper Aerial Project Management App'
+      msg: 'CompanyId Component'
     }
   }
 }
@@ -22,5 +22,4 @@ export default {
 h1, h2 {
   font-weight: normal;
 }
-
 </style>
