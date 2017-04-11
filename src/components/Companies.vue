@@ -4,24 +4,25 @@
     <h2>is this companies</h2>
     <router-view></router-view>
     <button>
-      <router-link to="/companies/5">
+      <router-link to="/companies/companyId/5">
         Companies 5
       </router-link>
     </button>
     <button>
-      <router-link to="/companies/7">
+      <router-link to="/companies/companyId/7">
         Companies 7
       </router-link>
     </button>
+
     <ul>
-      <li v-for="company in companies">
-        <button>
-          <router-link to="/companies">
-            Companies
-          </router-link>
-        </button>
-        {{ company.name }} {{ company.website }}
-      </li>
+      <div v-for="company in companies" :key="company.id">
+        <li>
+          <button class="btn btn-default btn-primary">
+            {{ company.id }}
+          </button>
+          {{ company.name }} {{ company.website }}
+        </li>
+      </div>
     </ul>
 
   </div>
