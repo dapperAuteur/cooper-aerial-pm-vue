@@ -1,7 +1,27 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <h1><a href="/companies">Companies</a></h1>
+    </br>
+    <button>
+      <router-link to="/">
+        Home
+      </router-link>
+    </button>
+    <button>
+      <router-link to="/companies">
+        Companies
+      </router-link>
+    </button>
+    <button>
+      <router-link to="/companies/companyId">
+        CompanyId
+      </router-link>
+    </button>
+    <button>
+      <router-link to="/companies/restAPI">
+        RestAPI
+      </router-link>
+    </button>
     <router-view></router-view>
   </div>
 </template>

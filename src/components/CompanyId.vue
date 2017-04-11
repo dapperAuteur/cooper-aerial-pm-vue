@@ -1,18 +1,16 @@
 <template>
-  <div class="companies">
-    <h1>{{ msg }}</h1>
-    <h2>is this companies</h2>
-    <router-view></router-view>
-
+  <div class="companyId">
+    <h1>{{ msgs }}</h1>
+    <h2>is this companyId</h2>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'companies',
+  name: 'companyId',
   data () {
     return {
-      msg: 'Welcome to the Cooper Aerial Project Management App'
+      msgs: 'CompanyId Page'
     }
   }
 }
