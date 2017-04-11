@@ -3,8 +3,25 @@
     <h1>{{ msg }}</h1>
     <h2>is this companies</h2>
     <router-view></router-view>
+    <button>
+      <router-link to="/companies/5">
+        Companies 5
+      </router-link>
+    </button>
+    <button>
+      <router-link to="/companies/7">
+        Companies 7
+      </router-link>
+    </button>
     <ul>
-      <li v-for="company in companies">{{ company.id }} {{ company.name }} {{ company.website }}</li>
+      <li v-for="company in companies">
+        <button>
+          <router-link to="/companies">
+            Companies
+          </router-link>
+        </button>
+        {{ company.name }} {{ company.website }}
+      </li>
     </ul>
 
   </div>
