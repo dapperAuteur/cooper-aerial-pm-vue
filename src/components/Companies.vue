@@ -4,12 +4,12 @@
     <h2>is this companies</h2>
     <router-view></router-view>
     <button>
-      <router-link to="/companies/companyId/5">
+      <router-link to="/companies/company/5">
         Companies 5
       </router-link>
     </button>
     <button>
-      <router-link to="/companies/companyId/7">
+      <router-link to="/companies/company/7">
         Companies 7
       </router-link>
     </button>
@@ -18,7 +18,9 @@
       <div v-for="company in companies" :key="company.id">
         <li>
           <button class="btn btn-default btn-primary">
-            {{ company.id }}
+            <router-link class="button" :to="{ name: 'company-view', params: { id: company.id } }">
+              {{ company.id }}
+            </router-link>
           </button>
           {{ company.name }} {{ company.website }}
         </li>

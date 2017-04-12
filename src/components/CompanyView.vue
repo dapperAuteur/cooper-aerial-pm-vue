@@ -3,12 +3,12 @@
     <h1>{{ msgs }}</h1>
     <h2>companyId is {{ $route.params.companyId }}</h2>
     <button>
-      <router-link to="/companies/companyId/5">
+      <router-link to="/companies/company/5">
         Companies 5
       </router-link>
     </button>
     <button>
-      <router-link to="/companies/companyId/7">
+      <router-link to="/companies/company/7">
         Companies 7
       </router-link>
     </button>

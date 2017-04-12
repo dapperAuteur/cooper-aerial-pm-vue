@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Hello from '@/components/Hello'
 import Companies from '@/components/Companies'
-import CompanyId from '@/components/CompanyId'
+import CompanyView from '@/components/CompanyView'
 import RestAPI from '@/components/RestAPI'
 
 Vue.use(Router)
@@ -20,9 +20,9 @@ export default new Router({
       component: Companies
     },
     {
-      path: '/companies/companyId/:companyId',
-      name: 'CompanyId',
-      component: CompanyId
+      path: '/companies/company/:companyId',
+      name: 'company-view',
+      component: CompanyView
     },
     {
       path: '/companies/restAPI',
